@@ -91,3 +91,23 @@ header nav ul li a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* main section styling */
+#about-me, #my-work, #contact-me {
+    margin: 20px auto;
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+.title-h2 {
+    border-bottom: 2px solid var(--color-5);
+    border-top: 2px solid var(--color-5);
+    position: relative;
+    left: auto;
+    top: 1.5px;
+    font-size: 35px;
+}
