@@ -1,5 +1,21 @@
 * {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root {
+    --color-1: hex(#0466C8);
+    --color-2: hex(#0353A4);
+    --color-3: hex(#023E7D);
+    --color-4: hex(#002855);
+    --color-5: hex(#001845);
+    --color-6: hex(#001233);
+    --color-7: hex(#33415C);
+    --color-8: hex(#5C677D);
+    --color-9: hex(#7D8597);
+    --color-10: hex(#979DAC);
 }
 
 /* navigation styling */
