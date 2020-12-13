@@ -19,14 +19,14 @@
 }
 
 body {
-    background: var(--color-3);
-    color: var(--color-10);
+    background: var(--color-10);
+    color: var(--color-5);
 }
 
 /* header and navigation styling */
 header {
     padding: 25px 35px;
-    background-color: var(--color-4);
+    background-color: var(--color-10);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -40,12 +40,12 @@ header {
 header h1 {
     font-weight: bolder;
     font-size: 45px;
-    color: var(--color-10);
+    color: var(--color-6);
     margin: 0;
 }
 
 header a {
-    color: var(--color-10);
+    color: var(--color-6);
     text-decoration: none;
 }
 
@@ -64,9 +64,27 @@ header nav ul li a {
     text-shadow: 0 0 10px var(--color-1);
 }
 
-/* start hero/jumbotron styling */
+/* start parallax styling */
 .parallax-1 {
     background-image: url(https://i.picsum.photos/id/1041/5184/2916.jpg?hmac=TW_9o6HeD7H7I7NVo-S1Fa1iAvzQ10uvmJqsXvNoi0M);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 {
+    background-image: url(https://i.picsum.photos/id/1045/3936/2624.jpg?hmac=PMfAbC94Asle_jgeRYsj7zQHFabfTfsIwL247Ewetwc);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-3 {
+    background-image: url(https://i.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ);
     height: 500px;
     background-attachment: fixed;
     background-position: center;
