@@ -111,3 +111,40 @@ header nav ul li a {
     top: 1.5px;
     font-size: 35px;
 }
+
+/* my work grid */
+.grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(3 1fr);
+    width: 90%;
+    grid-gap: 3px;
+    margin: 0 auto;
+}
+
+.work-examples {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    justify-content: center;
+    background-size: cover;
+    min-height: 200px;
+    box-shadow: var(--color-4);
+    width: auto;
+}
+
+.work-img {
+    border-right: 2px solid var(--color-5);
+    border-left: 2px solid var(--color-5);
+    font-size: 16px;
+    background-color: var(--color-9);
+    margin: auto 0 10px 0;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.work-1 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
