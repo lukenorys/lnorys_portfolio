@@ -1,23 +1,65 @@
 * {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 3px 0px;
     box-sizing: 0;
 }
 
 :root {
-    --color-1: hex(#0466C8);
-    --color-2: hex(#0353A4);
-    --color-3: hex(#023E7D);
-    --color-4: hex(#002855);
-    --color-5: hex(#001845);
-    --color-6: hex(#001233);
-    --color-7: hex(#33415C);
-    --color-8: hex(#5C677D);
-    --color-9: hex(#7D8597);
-    --color-10: hex(#979DAC);
+    --color-1: rgb(4, 102, 200);
+    --color-2: rgb(3, 83, 164);
+    --color-3: rgb(2, 62, 125);
+    --color-4: rgb(0, 40, 85);
+    --color-5: rgb(0, 24, 69);
+    --color-6: rgb(0, 18, 51);
+    --color-7: rgb(51, 65, 92);
+    --color-8: rgb(92, 103, 125);
+    --color-9: rgb(125, 133, 151);
+    --color-10: rgb(151, 157, 172);
 }
 
-/* navigation styling */
+body {
+    background: var(--color-3);
+    color: var(--color-10);
+}
 
-/* start hero/jumbotron styling */
+/* header and navigation styling */
+header {
+    padding: 25px 35px;
+    background-color: var(--color-4);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 50;
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: 45px;
+    color: var(--color-10);
+    margin: 0;
+}
+
+header a {
+    color: var(--color-10);
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 5px 10px;
+    font-weight: lighter;
+    font-size: 1.3vw;
+    text-shadow: 0 0 10px var(--color-1);
+}
