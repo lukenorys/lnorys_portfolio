@@ -273,3 +273,63 @@ ul li a:hover span:nth-child(4) {
 .contact p a {
     color: var(--color-5);
 }
+
+/* start footer styling */
+footer {
+    padding: 25px 35px;
+    background-color: var(--color-9);
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    background-size: cover;
+    align-items: left;
+    z-index: 50;
+    font-size: 14px;
+}
+
+/* start media queries below */
+
+/* this will be applied on any screen smaller than 968px */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        position: relative;
+    }
+
+    header nav ul li a {
+        font-size: 60%;
+    }
+
+    #about-me, #my-work, #contact-me {
+        padding-bottom: 0;
+        position: relative;
+        font-size: 80%;
+    }
+
+    .title-h2 {
+        margin: 10px;
+    }
+
+    p {
+        margin: 0 10px;
+        font-size: 60%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column: 4 / -3;
+        transform: none;
+    }
+
+    .site a {
+        align-content: center;
+        margin: 5px 10px;
+        font-size: 10%;
+    }
+
+    .contact {
+        padding-bottom: 0;
+        position: relative;
+    }
+}
