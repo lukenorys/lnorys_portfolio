@@ -66,6 +66,8 @@ header nav ul li a {
     text-shadow: 0 0 10px var(--color-1);
 }
 
+/* start nav snake styling */
+
 ul {
     position: absolute;
     top: 50%;
@@ -195,7 +197,7 @@ ul li a:hover span:nth-child(4) {
     font-size: 18px;
 }
 
-.title-h2 {
+.title-h2{
     border-bottom: 2px solid var(--color-5);
     border-top: 2px solid var(--color-5);
     position: relative;
@@ -255,4 +257,19 @@ ul li a:hover span:nth-child(4) {
 
 .work-4 {
     background-image: url(./images/placeholder2.png);
+}
+
+/* start contact styling */
+.contact {
+    width: 100%;
+    font-size: 16px;
+}
+
+.contact p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.contact p a {
+    color: var(--color-5);
 }
