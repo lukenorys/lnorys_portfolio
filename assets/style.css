@@ -26,7 +26,7 @@ body {
 /* header and navigation styling */
 header {
     padding: 25px 35px;
-    background-color: var(--color-10);
+    background-color: var(--color-9);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -42,6 +42,7 @@ header h1 {
     font-size: 45px;
     color: var(--color-6);
     margin: 0;
+    text-shadow: 0 0 10px var(--color-1);
 }
 
 header a {
@@ -67,7 +68,7 @@ header nav ul li a {
 /* start parallax styling */
 .parallax-1 {
     background-image: url(https://i.picsum.photos/id/1041/5184/2916.jpg?hmac=TW_9o6HeD7H7I7NVo-S1Fa1iAvzQ10uvmJqsXvNoi0M);
-    height: 500px;
+    height: 720px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,7 +77,7 @@ header nav ul li a {
 
 .parallax-2 {
     background-image: url(https://i.picsum.photos/id/1045/3936/2624.jpg?hmac=PMfAbC94Asle_jgeRYsj7zQHFabfTfsIwL247Ewetwc);
-    height: 500px;
+    height: 720px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,7 +86,7 @@ header nav ul li a {
 
 .parallax-3 {
     background-image: url(https://i.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ);
-    height: 500px;
+    height: 720px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -116,35 +117,51 @@ header nav ul li a {
 .grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(3 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 90%;
-    grid-gap: 3px;
+    grid-gap: 1px;
     margin: 0 auto;
 }
 
-.work-examples {
+.site {
     display: flex;
     flex-wrap: wrap;
     margin: 25px;
     justify-content: center;
     background-size: cover;
-    min-height: 200px;
-    box-shadow: var(--color-4);
+    min-height: 175px;
     width: auto;
+    border: 4px solid var(--color-5);
 }
 
-.work-img {
+.site a {
+    position: relative;
     border-right: 2px solid var(--color-5);
     border-left: 2px solid var(--color-5);
     font-size: 16px;
-    background-color: var(--color-9);
-    margin: auto 0 10px 0;
+    background: var(--color-10);
     padding: 10px 25px;
     text-decoration: none;
+    color: var(--color-6);
+    opacity: 0.7;
 }
 
 .work-1 {
-    grid-row: span 2;
-    grid-column: span 2;
+    grid-row: span 3;
+    grid-column: span 3;
+    background-image: url(./images/runbuddy.png);
+}
+
+.work-2 {
+    grid-column: 3 span 5;
+    background-image: url(./images/horiseon.png);
+}
+
+.work-3 {
+    background-image: url(./images/placeholder1.png);
+}
+
+.work-4 {
+    background-image: url(./images/placeholder2.png);
 }
